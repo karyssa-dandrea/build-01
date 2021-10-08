@@ -3,9 +3,9 @@ const generateButton = document.getElementById('generate');
 const text = document.getElementById('random-num');
 // initialize global state
 // set event listeners 
-const randomNum = Math.floor(Math.random() * 100);
 
 generateButton.addEventListener('click', ()=>{
+    let randomNum = Math.floor(Math.random() * 100);
     text.textContent = randomNum;
 });
 
